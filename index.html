@@ -8,45 +8,119 @@
     <title>Dashboard</title>
   </head>
   <body>
-
-    <!-- A good idea is splitting it into 2 sections, a sidebar section, and the main section where all of your
-    grid stuff is. Also apparently try to do everything with grid, even the flexbox stuff -->
-
-
-    <header>
-      <h1>Kbizzzyy</h1>
-      <form class="search-section">
-        <input type="search" placeholder="Search">
-      </form>
-
-      <section class="header-info">
-        
-      </section>
-    </header>
-    <section class="sidebar">
-      <ul>
+    
+    <!-- Sidebar container -->
+    <section class="sidebar-container">
+      <!-- Sidebar header  -->
+      <div class="sidebar-header">
+        <button class="toggle-sidebar-btn">
+          <img src="dashboard-icon.svg" class="icon">
+          <h2>Dashboard</h2>
+        </button>
+      </div>
+      <!-- Main sidebar -->
+      <ul class="sidebar-main">
         <!-- Sidebar item -->
         <li class="sidebar-item">
-          <img src="home-icon.svg" alt="">
-          <a class="sidebar-link" href="#">Dashboard</a>
+          <a class="sidebar-link" href="#"><img src="home-icon.svg" class="icon" alt=""><span>Home</span></a>
         </li>
-        <li>
-          <img src="home-icon.svg" alt="">
-          <a class="sidebar-link" href="#">Dashboard</a>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="#"><img src="insights-icon.svg" class="icon" alt=""><span>Projects</span></a>
         </li>
-        <li>
-          <img src="home-icon.svg" alt="">
-          <a class="sidebar-link" href="#">Dashboard</a>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="#"><img src="projects-icon.svg" class="icon" alt=""><span>Communities</span></a>
         </li>
-        <li>
-          <img src="home-icon.svg" alt="">
-          <a class="sidebar-link" href="#">Dashboard</a>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="#"><img src="timeline-icon.svg" class="icon" alt=""><span>Timeline</span></a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link"><img src="message-icon.svg" class="icon" alt=""><span>Message</span></a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link"><img src="events-icon.svg" class="icon" alt=""><span>Events</span></a>
         </li>
       </ul>
-      <li><a href="#"><img src="message-icon.svg" class="icon" alt=""></a></li>
+
+      <!-- Secondary sidebar -->
+      <ul class="sidebar-sub">
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link"><img src="settings-icon.svg" class="icon" alt=""><span>Settings</span></a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link"><img src="account-icon.svg" class="icon" alt=""><span>Account</span></a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link"><img src="support-icon.svg" class="icon" alt=""><span>Support</span></a>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- Main page section -->
+    <section class="main-page">
+
+      <!-- Header of main page: Has search bar -->
+      <header class="main-page-header">
+
+        <!--Left, center, and right sections of the main page's header  -->
+        <section class="left-section-header">
+          <h2>web logo</h2>
+        </section>
+        <form class="search-section">
+          <fieldset class="input-section">
+            <img src="search-icon.svg" class="icon search-icon">
+            <label for=""><input type="search" class="search-input-bar" placeholder="Search..."></label>
+          </fieldset>
+          <button type="submit" class="search-button">Search</button>
+        </form>
+        <section class="right-header">
+          <ul class="header-nav">
+            <li>
+              <a class="nav-item" href="#">About</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#">News</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#">Themes</a>
+            </li>
+            <li>
+              <button class="nav-item"><img src="notification-icon.svg" class="icon"></button>
+            </li>
+            <li>
+              <a class="nav-item"><img src="profile-img.jpg" class="profile-picture"></a>
+            </li>
+          </ul>
+        </section>
+      </header>
+
+      <!-- User ribbon section -->
+      <section class="user-ribbon">
+        <!-- Left side (info section) -->
+        <div class="user-info-section">
+          <img src="profile-img.jpg" class="profile-picture" alt="profile picture">
+          <h2>Hi there, <br><span class="user-social">Morgan Oakley (@morgan)</span></h2>
+        </div>
+
+        <!-- Right side (action links section) -->
+        <ul class="actions-links">
+          <li>
+            <a href="#" class="action-link">New</a>
+          </li>
+
+          <li>
+            <a href="#" class="action-link">Upload</a>
+          </li>
+
+          <li>
+            <a href="#" class="action-link">Share</a>
+          </li>
+        </ul>
+      </section>
+
+      
+      
 
     </section>
-    <section class="content-grid"></section>
     <script src="app.js"></script>
   </body>
 </html>
