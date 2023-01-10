@@ -11,46 +11,46 @@
     
     <!-- Sidebar container -->
     <section class="sidebar-container">
-      <!-- Sidebar header  -->
-      <div class="sidebar-header">
-        <button class="toggle-sidebar-btn">
-          <img src="dashboard-icon.svg" class="icon">
-          <h2>Dashboard</h2>
-        </button>
-      </div>
+
       <!-- Main sidebar -->
       <ul class="sidebar-main">
         <!-- Sidebar item -->
         <li class="sidebar-item">
-          <a class="sidebar-link" href="#"><img src="home-icon.svg" class="icon" alt=""><span>Home</span></a>
+          <button class="toggle-sidebar-btn">
+            <img src="images/dashboard-icon.svg" class="icon">
+            <h2 class="sidebar-item-title">Dashboard</h2>
+          </button>
         </li>
         <li class="sidebar-item">
-          <a class="sidebar-link" href="#"><img src="insights-icon.svg" class="icon" alt=""><span>Projects</span></a>
+          <a class="sidebar-link" href="#"><img src="images/home-icon.svg" class="icon" alt=""><span class="sidebar-item-title">Home</span></a>
         </li>
         <li class="sidebar-item">
-          <a class="sidebar-link" href="#"><img src="projects-icon.svg" class="icon" alt=""><span>Communities</span></a>
+          <a class="sidebar-link" href="#"><img src="images/insights-icon.svg" class="icon" alt=""><span class="sidebar-item-title">Projects</span></a>
         </li>
         <li class="sidebar-item">
-          <a class="sidebar-link" href="#"><img src="timeline-icon.svg" class="icon" alt=""><span>Timeline</span></a>
+          <a class="sidebar-link" href="#"><img src="images/projects-icon.svg" class="icon" alt=""><span class="sidebar-item-title">Communities</span></a>
         </li>
         <li class="sidebar-item">
-          <a href="#" class="sidebar-link"><img src="message-icon.svg" class="icon" alt=""><span>Message</span></a>
+          <a class="sidebar-link" href="#"><img src="images/timeline-icon.svg" class="icon" alt=""><span class="sidebar-item-title">Timeline</span></a>
         </li>
         <li class="sidebar-item">
-          <a href="#" class="sidebar-link"><img src="events-icon.svg" class="icon" alt=""><span>Events</span></a>
+          <a href="#" class="sidebar-link"><img src="images/message-icon.svg" class="icon" alt=""><span class="sidebar-item-title">Message</span></a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link"><img src="images/events-icon.svg" class="icon" alt=""><span class="sidebar-item-title">Events</span></a>
         </li>
       </ul>
 
       <!-- Secondary sidebar -->
       <ul class="sidebar-sub">
         <li class="sidebar-item">
-          <a href="#" class="sidebar-link"><img src="settings-icon.svg" class="icon" alt=""><span>Settings</span></a>
+          <a href="#" class="sidebar-link"><img src="images/settings-icon.svg" class="icon" alt=""><span class="sidebar-item-title">Settings</span></a>
         </li>
         <li class="sidebar-item">
-          <a href="#" class="sidebar-link"><img src="account-icon.svg" class="icon" alt=""><span>Account</span></a>
+          <a href="#" class="sidebar-link"><img src="images/account-icon.svg" class="icon" alt=""><span class="sidebar-item-title">Account</span></a>
         </li>
         <li class="sidebar-item">
-          <a href="#" class="sidebar-link"><img src="support-icon.svg" class="icon" alt=""><span>Support</span></a>
+          <a href="#" class="sidebar-link"><img src="images/support-icon.svg" class="icon" alt=""><span class="sidebar-item-title">Support</span></a>
         </li>
       </ul>
     </section>
@@ -67,7 +67,7 @@
         </section>
         <form class="search-section">
           <fieldset class="input-section">
-            <img src="search-icon.svg" class="icon search-icon">
+            <img src="images/search-icon.svg" class="icon search-icon">
             <label for=""><input type="search" class="search-input-bar" placeholder="Search..."></label>
           </fieldset>
           <button type="submit" class="search-button">Search</button>
@@ -84,10 +84,10 @@
               <a class="nav-item" href="#">Themes</a>
             </li>
             <li>
-              <button class="nav-item"><img src="notification-icon.svg" class="icon"></button>
+              <button class="nav-item"><img src="images/notification-icon.svg" class="icon"></button>
             </li>
             <li>
-              <a class="nav-item"><img src="profile-img.jpg" class="profile-picture"></a>
+              <a class="nav-item"><img src="images/profile-picture.jpg" class="profile-picture"></a>
             </li>
           </ul>
         </section>
@@ -97,7 +97,7 @@
       <section class="user-ribbon">
         <!-- Left side (info section) -->
         <div class="user-info-section">
-          <img src="profile-img.jpg" class="profile-picture" alt="profile picture">
+          <img src="images/profile-picture.jpg" class="profile-picture" alt="profile picture">
           <h2>Hi there, <br><span class="user-social">Morgan Oakley (@morgan)</span></h2>
         </div>
 
@@ -118,6 +118,81 @@
       </section>
 
       
+      <section class="content-section">
+        <section class="projects-section">
+          <h2>My Projects</h2>
+          <section class="projects-grid">
+
+            <article class="project-card">
+              <h3 class="project-title">Calculator</h3>
+              <div class="project-img-container">
+                <img src="images/project-img.jpg" class="project-img">
+              </div>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti quae adipisci, ipsa quod harum.</p>
+              <ul class="project-actions">
+                <li><a href="#"><img src="images/eye-icon.svg" class="icon"></a></li>
+                <li><a href="#"><img src="images/github-icon.svg" class="icon"></a></li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <h3 class="project-title">Calculator</h3>
+              <div class="project-img-container">
+                <img src="images/project-img.jpg" class="project-img">
+              </div>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti quae adipisci, ipsa quod harum.</p>
+              <ul class="project-actions">
+                <li><a href="#"><img src="images/eye-icon.svg" class="icon"></a></li>
+                <li><a href="#"><img src="images/github-icon.svg" class="icon"></a></li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <h3 class="project-title">Calculator</h3>
+              <div class="project-img-container">
+                <img src="images/project-img.jpg" class="project-img">
+              </div>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti quae adipisci, ipsa quod harum.</p>
+              <ul class="project-actions">
+                <li><a href="#"><img src="images/eye-icon.svg" class="icon"></a></li>
+                <li><a href="#"><img src="images/github-icon.svg" class="icon"></a></li>
+              </ul>
+            </article>
+          </section>
+        </section>
+
+        <section class="social-section">
+          <h2>Sample title</h2>
+          
+          <ul class="social-feed">
+            <li class="feed-item">
+              <a href="#" class="feed-link">Other title</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, recusandae.</p>
+            </li>
+
+            <li class="feed-item">
+              <a href="#" class="feed-link">Other title</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, recusandae.</p>
+            </li>
+
+            <li class="feed-item">
+              <a href="#" class="feed-link">Other title</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, recusandae.</p>
+            </li>
+
+            <li class="feed-item">
+              <a href="#" class="feed-link">Other title</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, recusandae.</p>
+            </li>
+
+            <li class="feed-item">
+              <a href="#" class="feed-link">Other title</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, recusandae.</p>
+            </li>
+          </ul>
+        </section>
+
+      </section>
       
 
     </section>
